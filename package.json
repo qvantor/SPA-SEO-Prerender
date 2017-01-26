@@ -1,0 +1,13 @@
+{
+  "name": "SPA-SEO-Prerender",
+  "description": "SPA-SEO-Prerender",
+  "version": "0.0.1",
+  "dependencies": {
+    "express": "^4.14.0",
+    "webdriverio": "^4.6.2"
+  },
+  "scripts": {
+    "init": "curl -O http://selenium-release.storage.googleapis.com/3.0/selenium-server-standalone-3.0.1.jar",
+    "start": "java -jar -Dwebdriver.gecko.driver=./geckodriver selenium-server-standalone-3.0.1.jar"
+  }
+}
