@@ -12,6 +12,7 @@ app.get('*', function (req, res) {
         })
         .init()
         .url(req.params[0].slice(1))
+        .waitForExist('#html-ready', 30000)
         .getHTML('html')
         .then(function (html) {
             html = html.replace(/<script.+<\/script>/g, '');
